@@ -38,7 +38,7 @@ html, body {
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top; /* <-- Cambiado aquí */
   flex-shrink: 0;
   background-color: #000;
 }
@@ -87,7 +87,7 @@ html, body {
   border-radius: 5px;
   user-select: none;
   pointer-events: none;
-  align-self: center; /* centrado horizontal */
+  align-self: center;
 }
 
 /* Modal */
@@ -97,26 +97,16 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* fondo semitransparente */
+  background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* soporte para Safari */
+  -webkit-backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1000;
 }
 
-.modal-content {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 600px;
-  max-height: 90%;
-  overflow-y: auto;
-  position: relative;
-}
-
+.modal-content,
 .modal-content-2 {
   background: white;
   padding: 2rem;
@@ -202,7 +192,7 @@ html, body {
   }
 
   .buttons {
-    flex-direction: row; /* botones en horizontal */
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px;
   }
