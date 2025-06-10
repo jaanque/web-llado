@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const images = [
   'https://i.ibb.co/tPLjnjDH/20250606-1144-Chico-en-Playa-simple-compose-01jx29xfyhfxws1r8h44bvm5ge.png',
